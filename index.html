@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sitio Web Onepage</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  <!-- Header -->
+  <header id="header">
+    <nav>
+      <h1>Mi Sitio Web Onepage</h1>
+      <ul>
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#content">Contenido</a></li>
+        <li><a href="#apod">Sucesos</a></li>
+        <li><a href="#epic">Imágenes</a></li>
+        <li><a href="#form">Formulario</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sección Principal -->
+  <section id="home">
+    <h2>Explora el Universo y la Tierra</h2>
+    <p>Bienvenido a nuestro portal donde podrás descubrir las maravillas del universo y observar nuestra Tierra desde el espacio, gracias a las imágenes proporcionadas por la NASA. <br> Recorre la página para ver imágenes astronómicas diarias, y obtén una visión impresionante de nuestro planeta desde el satélite DSCOVR</p>
+  </section>
+
+  <!-- Sección de Contenido -->
+  <section id="content">
+    <h2>Lo que Ofrecemos</h2>
+    <p>Aquí podrás ver la foto astronómica del día y explorar imágenes tomadas desde nuestro satélite en su misión de capturar la Tierra desde el espacio. <br> Cada día encontrarás una imágen nueva con una historia única sobre el cosmos y la forma en que observamos nuestro planeta. ¡Adentrate en este viaje visual!</p>
+  </section>
+
+  <!-- Sección de API -->
+    <section id="apod">
+    <h2>Suceso Astronómico del Día</h2>
+    <li><strong>Acontecimiento Astronómico del Día:</strong> Cada día, la NASA publica una nueva imagen o video de alta calidad, junto con una breve explicación. Esta sección te permite explorar lo mejor de la astronomía, desde supernovas hasta galaxias lejanas.</li>
+    <div id="apod-data"></div>
+  </section>
+  
+  <section id="epic">
+    <h2>Imágenes de la Tierra</h2>
+    <li><strong>Imagen de la Tierra:</strong> Capturas espectaculares tomadas por el satélite DSCOVR que nos muestra la Tierra desde el espacio. Estas imágenes te brindan una vista única de nuestro planeta en su contexto cósmico.</li>
+    <div id="epic-data"></div>
+  </section>
+  
+
+  <!-- Sección del Formulario -->
+  <section id="form">
+    <h2>Formulario de Contacto</h2>
+    <p>¿Tienes alguna pregunta sobre el espacio o la Tierra? ¿Te interesa la Astronomía? ¡Envíanos un mensaje y nos pondremos en contacto contigo!</p>
+    <form id="contact-form">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name" required>
+      <span class="error" id="name-error"></span>
+
+      <label for="email">Correo Electrónico:</label>
+      <input type="email" id="email" name="email" required>
+      <span class="error" id="email-error"></span>
+
+      <label for="message">Mensaje:</label>
+      <textarea id="message" name="message" required></textarea>
+      <span class="error" id="message-error"></span>
+
+      <button type="submit">Enviar</button>
+    </form>
+    <p id="form-feedback"></p>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
