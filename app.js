@@ -1,4 +1,11 @@
+const menuToggle = document.getElementById('menu-toggle');
+const navList = document.getElementById('nav-list');
 const nasaApiKey = 't1RfAbcPO5YINLzbMREhS5mjA1w5bPZlNtJssyd3';
+
+// Menú hamburguesa
+menuToggle.addEventListener('click', () => {
+    navList.classList.toggle('active');
+});
 
 // Fetch de APOD
 async function fetchApodData() {

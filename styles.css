@@ -133,13 +133,15 @@ form input:focus, form textarea:focus {
 }
 
 form button {
-  background: #3498db;
-  color: #fff;
+  background-color: #f5b041; /* El color del fondo del botón */
+  color: #2c3e50; /* Color del texto */
   border: none;
+  border-radius: 5px;
+  padding: 0.8rem 2rem; /* Tamaño adecuado para el botón */
+  font-size: 1.1rem;
   cursor: pointer;
-  font-weight: bold;
-  transition: background 0.3s;
-  padding: 10px;
+  transition: background-color 0.3s ease;
+  width: 100%;
 }
 
 form button:hover {
